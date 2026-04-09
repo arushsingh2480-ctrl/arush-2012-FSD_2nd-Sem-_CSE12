@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Even Odd and Loop</title>
+    <style>
+        body{
+            font-family: Arial;
+            text-align: center;
+            background-color: #f2f2f2;
+        }
+        .box{
+            background: white;
+            padding: 20px;
+            width: 300px;
+            margin: 50px auto;
+            box-shadow: 0px 0px 10px gray;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <h2>Even Odd Checker</h2>
+    Enter Number:
+    <input type="number" id="num"><br><br>
+    <button onclick="checkNumber()">Check</button>
+    <div id="result"></div>
+    <div id="numbers"></div>
+</div>
+<script>
+function checkNumber()
+{
+    let number = document.getElementById("num").value;
+    let result = document.getElementById("result");
+    let numbers = document.getElementById("numbers");
+    numbers.innerHTML = "";
+    if(number % 2 == 0)
+    {
+    result.innerHTML = "Number is EVEN";
+    }
+    else
+    {
+    result.innerHTML = "Number is ODD";
+    }
+    for(let i = 1; i <= number; i++)
+    {
+    numbers.innerHTML += i + " ";
+    }
+}
+</script>
+</body>
+</html>
