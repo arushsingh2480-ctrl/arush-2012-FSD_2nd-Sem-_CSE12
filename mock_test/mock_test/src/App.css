@@ -1,0 +1,83 @@
+/* App.css */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #797b7d, #141414);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-box{
+  background: white;
+  padding: 35px;
+  width: 380px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 20px rgba(222, 143, 143, 0.2);
+  text-align: center;
+}
+
+.form-box h1{
+  margin-bottom: 25px;
+  color: #be7c7c;
+  font-size: 28px;
+}
+
+form input{
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s;
+}
+
+form input:focus{
+  border-color: #4facfe;
+  box-shadow: 0px 0px 8px rgba(79,172,254,0.5);
+}
+
+button{
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 8px;
+  background: #4facfe;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover{
+  background: #007bff;
+}
+
+.error{
+  margin-top: 15px;
+  color: red;
+  font-weight: bold;
+}
+
+.success{
+  margin-top: 15px;
+  color: green;
+  font-weight: bold;
+}
