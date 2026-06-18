@@ -1,0 +1,39 @@
+/* Background setup and pushing footer to the bottom */
+body {
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex: 1;
+}
+
+/* Custom styling to match layout from Screenshot 2026-06-18 at 21.47.42.png */
+.product-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Subtle lift animation on hover */
+.product-card:hover {
+    transform: translateY(-2px);
+}
+
+/* Constrains product images uniformly within the cards */
+.card-img-container {
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.card-img-container img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
