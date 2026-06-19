@@ -1,0 +1,95 @@
+
+  <!DOCTYPE html>
+<html>
+<head>
+    <title>Vowel or Consonant Checker</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .container {
+            width: 350px;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        input {
+            padding: 10px;
+            width: 80%;
+            margin: 10px 0;
+            border: 2px solid #4CAF50;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #result {
+            margin-top: 15px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .vowel {
+            color: green;
+        }
+
+        .consonant {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Vowel or Consonant Checker</h2>
+
+    <input type="text" id="char" maxlength="1" placeholder="Enter a character">
+    <br>
+
+    <button onclick="checkCharacter()">Check</button>
+
+    <p id="result"></p>
+</div>
+
+<script>
+function checkCharacter() {
+    let ch = document.getElementById("char").value.toLowerCase();
+    let result = document.getElementById("result");
+
+    if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+        result.innerHTML = ch + " is a Vowel";
+        result.className = "vowel";
+    }
+    else {
+        result.innerHTML = ch + " is a Consonant";
+        result.className = "consonant";
+    }
+}
+</script>
+
+</body>
+</html>
